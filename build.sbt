@@ -7,6 +7,9 @@ scalaVersion := "2.11.6"
 val camelVersion = "2.15.0"
 
 libraryDependencies ++= Seq(
+  "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.3",
+  "org.scala-lang.modules" %% "scala-xml" % "1.0.3",
+  "org.scala-lang.plugins" %% "scala-continuations-library" % "1.0.2",
   "org.apache.camel" % "camel-core" % camelVersion,
   "org.apache.camel" % "camel-scala" % camelVersion,
   "org.apache.camel" % "camel-stream" % camelVersion,
@@ -17,5 +20,5 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-"org.apache.camel" % "camel-testng" % camelVersion % "test"
+  "org.apache.camel" % "camel-testng" % camelVersion % "test"
 )
